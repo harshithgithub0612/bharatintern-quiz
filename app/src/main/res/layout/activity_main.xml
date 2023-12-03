@@ -1,0 +1,54 @@
+<!-- res/layout/activity_main.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/questionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question 1: What is the capital of France?"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:textSize="18sp"/>
+
+    <RadioGroup
+        android:id="@+id/answerRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/questionTextView"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp">
+
+        <RadioButton
+            android:id="@+id/optionARadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A. Paris"/>
+
+        <RadioButton
+            android:id="@+id/optionBRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B. London"/>
+
+        <RadioButton
+            android:id="@+id/optionCRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C. Berlin"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/answerRadioGroup"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:text="Submit"/>
+
+</RelativeLayout>
